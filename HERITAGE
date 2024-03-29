@@ -1,0 +1,22 @@
+class medicament extends produit {
+    constructor(reference, prix, quantite, nom, molecule) {
+        super(reference, prix, quantite);
+        this.nom = nom
+        this.molecule = molecule
+    }
+    getnom() {
+        return this.nom
+    }
+    setnom(value) {
+        this.nom = value
+    }
+    getmolecule() {
+        return this.molecule
+    }
+    setmolecule(value) {
+        this.molecule = value
+    }
+    Affichage() {
+        console.log(this.nom + " " + this.molecule)
+    }
+}
